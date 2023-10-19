@@ -1,0 +1,14 @@
+name: Commande Hello world
+
+# L'action s'activera à chaque push sur le repository
+on: [push]
+
+jobs:
+  echo-hello-world-job:
+    # On tourne sur une machine ubuntu
+    runs-on: ubuntu-latest
+
+    steps:
+      # Le nom est optionel, il sert juste à identifier dans l'interface
+      - name: Hello world
+        run: echo "Hello world"
